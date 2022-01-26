@@ -64,13 +64,13 @@ body {
     height: 216px;
     border-radius: 9px;
     font-family: 'Roboto', sans-serif;
-    padding-left: 14px;
+    padding: 14px;
     background-color: #FFFFFF;
     box-shadow: 0 0 -4px 10px rgb(0,0,0,0.25);
     margin-right: 14px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-grow: 0;
     flex-shrink: 0;
 }
