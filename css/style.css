@@ -99,3 +99,26 @@ body {
     font-weight: 400;
     color: #000000;
 }
+
+.rodape {
+    width: 414px;
+    height: 92px;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.rodape button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    color: #FFFFFF;;
+    border: none;
+    text-align: center;
+    margin: 15px 25px;
+    font-weight: normal;
+    font-size: 20px;
+}
