@@ -31,69 +31,78 @@
             <!------- SEÇÃO DOS PRATOS ------->
             <h2>Primeiro, seu prato</h2>
             <section class="categoria">
-                <article class="produto">
+                <article class="produto" onclick="selecionando(0,0)">
                     <img src="resources/frango_yin_yang.png">
                     <h3>Frango Yin Tang</h3>
                     <p>Um pouco de batata, um pouco de salada</p>
                     <span>R$ 14,90</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
-                <article class="produto">
+                <article class="produto" onclick="selecionando(0,1)">
                     <img src="resources/frango_parmegiana.jpg">
                     <h3>Frango à Parmegiana</h3>
                     <p>Frango à parmegiana, arroz e batata frita</p>
                     <span>R$ 11,90</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
-                <article class="produto">
+                <article class="produto" onclick="selecionando(0,2)">
                     <img src="resources/strogonoff_de_frango.jpg">
                     <h3>Strognoff de Frango</h3>
                     <p>Strogonoff, arroz e batata palha</p>
                     <span>R$ 13,50</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
             </section>
             
             <!------- SEÇÃO DAS BEBIDAS ------->
             <h2>Agora, sua bebida</h2>
             <section class="categoria">
-                <article class="produto">
+                <article class="produto" onclick="selecionando(1,0)">
                     <img src="resources/coca_cola.jpg">
                     <h3>Coca Cola 350ml</h3>
                     <p>Coca Cola em lata, 350ml</p>
                     <span>R$ 3,90</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
-                <article class="produto">
+                <article class="produto" onclick="selecionando(1,1)">
                     <img src="resources/guarana.jpg">
                     <h3>Guaraná 350ml</h3>
                     <p>Guaraná Antartica em lata, 350ml</p>
                     <span>R$ 3,50</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
-                <article class="produto">
+                <article class="produto" onclick="selecionando(1,2)">
                     <img src="resources/sprite.jpg">
                     <h3>Sprite 2L</h3>
                     <p>Refrigerante Sprite de 2L </p>
                     <span>R$ 6,90</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
             </section>
             
             <!------- SEÇÃO DAS SOBREMESAS ------->
             <h2>Por fim, sua sobremesa</h2>
             <section class="categoria">
-                <article class="produto">
+                <article class="produto" onclick="selecionando(2,0)">
                     <img src="resources/acai.jpg">
                     <h3>Acaí 300ml</h3>
                     <p>Açaí no copo de 300ml, ingredientes à escolha</p>
                     <span>R$ 4,00</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
-                <article class="produto">
+                <article class="produto" onclick="selecionando(2,1)">
                     <img src="resources/sorvete.jpg">
                     <h3>Bolas de Sorvete</h3>
                     <p>Sorvete com 4 bolas de sabores diferentes</p>
                     <span>R$ 5,90</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
-                <article class="produto">
+                <article class="produto" onclick="selecionando(2,2)">
                     <img src="resources/mousse_de_morango.jpeg">
                     <h3>Mousse de Morango</h3>
                     <p>Mousse de morango em pote de 200ml</p>
                     <span>R$ 3,50</span>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                 </article>
             </section>
         </div>
@@ -102,9 +111,12 @@
     <!-------- BOTÃO PARA FINALIZAR COMPRA -------->
     <footer>
         <div class="rodape">
-            <button type="submit">Selecione os 3 itens
-                para fechar o pedido</button>
+            <button class="botao desabilitado" type="submit">Selecione os 3 itens para fechar o pedido</button>
         </div>
     </footer>
+
+    <!-------- SCRIPTS -------->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
