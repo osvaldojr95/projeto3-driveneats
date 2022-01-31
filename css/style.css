@@ -3,18 +3,19 @@
 }
 
 body {
-    width: 414px;
+    width: 100%;
     background-color: #EEEEEE;
 }
 
 .topo {
-    width: 414px;
+    width: 100%;
     height: 92px;
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     position: fixed;
     left: 0;
     top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,24 +111,98 @@ body {
 }
 
 .rodape {
-    width: 414px;
+    width: 100%;
     height: 92px;
     background-color: #FFFFFF;
     position: fixed;
     left: 0;
     bottom: 0;
+    right: 0;
     z-index: 4;
 }
 
 .botao{
-    width: 364px;
+    width: 75%;
     height: 61px;
     border-radius: 50px;
     color: #FFFFFF;;
     border: none;
     text-align: center;
-    margin: 15px 25px;
+    margin: 15px auto;
+    padding: 0 15px;
     font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+.bg-confirmacao {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.confirmacao {
+    width: auto;
+    height: 353px;
+    margin: 28vh 15px;
+    padding: 20px 26px;
+    background-color: #50D074;
+    border-radius: 9px;
+    box-shadow: 0 0 10px 1px rgb(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.confirmacao h5 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.confirmacao-itens {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.total {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pedir {
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+}
+
+.cancelar {
+    width: auto;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
 }
 
 .desabilitado {
