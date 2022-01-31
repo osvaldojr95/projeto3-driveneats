@@ -1,6 +1,7 @@
 let prato = null;
 let bebida = null;
 let sobremesa = null;
+let total = null;
 let nome = null;
 let endereco = null;
 
@@ -50,7 +51,7 @@ function fecharpedido(){
     telaConfirmacao.querySelector(".sobremesa-nome").innerHTML = sobremesa.nome;
     telaConfirmacao.querySelector(".sobremesa-valor").innerHTML = sobremesa.valor.toFixed(2).replace('.',',');
     
-    let total = prato.valor + bebida.valor +sobremesa.valor;
+    total = prato.valor + bebida.valor +sobremesa.valor;
     telaConfirmacao.querySelector(".total-valor").innerHTML = `R$ ${total.toFixed(2).replace('.',',')}`;
 
     telaConfirmacao.classList.remove("escondido");
@@ -64,7 +65,17 @@ function obterDados(){
 }
 
 function pedir(){
+    let texto = "Olá, gostaria de fazer o pedido:"
+        + "\n- Prato: " + prato.nome
+        + "\n- Bebida: " + bebida.nome
+        + "\n- Sobremesa: " + sobremesa.nome
+        + "\nTotal: R$ " + total.toFixed(2).replace('.',',')
+        + "\n\nNome: " + nome
+        + "\nEndereço: " + endereco;
 
+    let link = "https://wa.me/5524993004516?text=" + encodeURIComponent(texto);
+
+    window.open(link, '_blank');
 }
 
 function cancelar(){
